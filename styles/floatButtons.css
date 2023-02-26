@@ -1,0 +1,39 @@
+.float-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000000;
+  }
+  
+  .float-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25d366;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .float-button:hover {
+    background-color: #128c7e;
+  }
+  
+  .float-button.whatsapp i,
+  .float-button.linkedin i {
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  .float-button.linkedin {
+    margin-right: 20px;
+    background-color: #0077b5;
+  }
+  
+  .float-button.linkedin:hover {
+    background-color: #0e5a81;
+  }
+  

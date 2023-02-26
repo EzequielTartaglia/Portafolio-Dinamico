@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/floatButtons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body id="cambio-color">
+    <!-- Boton flotante de WhatsApp y linkedIn -->
+    <div class="float-buttons">
+      <a href="#" class="float-button whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="#" class="float-button linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div> 
+    <!-- Header con el nav y los links -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+        
+        <li><a href="#" id="modo-nocturno"><i class="fas fa-moon"></i></a></li>
+      
+      </nav>
+    </header>
+   
+    
+    <!-- Sección de certificaciones con slide -->
+    <section id="home">
+      <h2>Certificaciones</h2>
+      <div class="slideshow">
+       
+        <!-- carousel control buttons -->
+        <button class="slide-btn slide-btn-1"></button>
+        <button class="slide-btn slide-btn-2"></button>
+        <button class="slide-btn slide-btn-3"></button>
+        <button class="slide-btn slide-btn-4"></button>
+        <button class="slide-btn slide-btn-5"></button>
+        <!-- carousel wrapper which contains all images -->
+        <div class="slideshow-wrapper">
+            <div class="slide">
+                <img class="slide-img"
+                    src="https://dummyimage.com/300x250/ccc/000.png&text=Slide1" alt="">
+            </div>
+            <div class="slide">
+                <img class="slide-img"
+                src="https://dummyimage.com/300x250/ccc/000.png&text=Slide2" alt="">
+            </div>
+            <div class="slide">
+                <img class="slide-img"
+                src="https://dummyimage.com/300x250/ccc/000.png&text=Slide3" alt="">
+            </div>
+            <div class="slide">
+                <img class="slide-img" 
+                src="https://dummyimage.com/300x250/ccc/000.png&text=Slide3" alt="">
+            </div>
+            <div class="slide">
+                <img class="slide-img"
+                src="https://dummyimage.com/300x250/ccc/000.png&text=Slide4" alt="">
+            </div>
+        </div>
+        <div class="slider-button">
+            <button class="btn">Contrátame</button>
+          </div>
+    </div>
+      
+    </section>
+    
+    <!-- Sección de sobre mí -->
+    <section id="sobre-mi">
+      <div class="contenido">
+        <h2>Sobre mí</h2>
+        <h1>Mi nombre es <span>NOMBRE </span>APELLIDO</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, nsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusadipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectus reiciendis earum nihil illo ut asperiores expedita sapiente. Recusandae, dolorum expedita?</p>
+        <button  class="btn" id="downloadCV">Descargar CV</button>
+      </div>
+      <img id="profileImg" src="https://dummyimage.com/300x300/ccc/000.png&text=Profile-Image" alt="Profile Picture">
+    </section>
+    
+    <!-- Sección de habilidades -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div>
+      <button class="btn skills" id="softSkillsBtn">Soft Skills</button>
+      <button class="btn skills" id="hardSkillsBtn" class="active">Hard Skills</button>
+      </div>
+      <ul>
+        <div id="chart-container">
+          <canvas id="myChart" width="50" height="600"></canvas>
+          <canvas id="myChart2" width="50" height="600"></canvas>
+        </div>
+        
+      </ul>
+    </section>
+    
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div id="button-container">
+      <button class="btn skills" id="primerProyectoBtn">Nombre del proyecto 1</button>
+      <button class="btn skills" id="segundoProyectoBtn" >Nombre del proyecto 2</button>
+      <button class="btn skills" id="tercerProyectoBtn" >Nombre del proyecto 3</button>
+      <button class="btn skills" id="cuartoProyectoBtn" >Nombre del proyecto 4</button>
+      </div>
+
+      
+          <div class="containerProjects">
+            <!-- Class traida desde JS -->
+          </div>
+
+    </section>
+    <!-- Sección de contacto -->
+    <section id="contacto">
+      <div class="contacto-contenedor">
+        <h2>Contacto</h2>
+        <form action="enviar_formulario.php" method="post">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo..." required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu dirección de correo electrónico..." required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje..." required></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    
+    <!-- Footer con redes sociales -->
+    <footer>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+      <span class="rights">Portafolio de Nombre &copy; | Derechos de autor  <span id="year"></span> | <a href="#">Tu Nombre</a></span>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/chartsjs.js"></script>
+    <script src="./scripts/Project_class&functions.js"></script>
+  </body>
+</html>
