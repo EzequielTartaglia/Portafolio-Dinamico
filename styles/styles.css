@@ -157,7 +157,7 @@ nav a:hover {
   height: 100%;
   object-fit:cover;
   max-width: 100%; /* ancho máximo que quieres aplicar a la imagen */
-  max-height: 1000px; /* altura máxima que quieres aplicar a la imagen */
+  max-height: 1200px; /* altura máxima que quieres aplicar a la imagen */
 }
 /* @keyframes are used to provide animations
    We make these settings for 4 image carousel.
@@ -188,16 +188,16 @@ nav a:hover {
     left: -300%;
   }
   60% {
-    left: -200%;
+    left: -400%;
   }
   70% {
-    left: -200%;
+    left: -400%;
   }
   75% {
-    left: -100%;
+    left: -500%;
   }
   85% {
-    left: -100%;
+    left: -500%;
   }
   90% {
     left: 0%;
@@ -279,11 +279,11 @@ nav a:hover {
 /* define width and height for images*/
 .slide {
   width: 100%;
-  height: 1000px;
+  height: auto;
 }
 .slider-button {
   position: absolute;
-  bottom: 100px;
+  bottom: 200px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;

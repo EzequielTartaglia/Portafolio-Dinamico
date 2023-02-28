@@ -40,32 +40,42 @@
       <div class="slideshow">
        
         <!-- carousel control buttons -->
-        <button class="slide-btn slide-btn-1"></button>
-        <button class="slide-btn slide-btn-2"></button>
-        <button class="slide-btn slide-btn-3"></button>
-        <button class="slide-btn slide-btn-4"></button>
-        <button class="slide-btn slide-btn-5"></button>
+        <button class="slide-btn slide-btn-1" onclick="mostrarImagenCompleta('./img/Certificaciones/Javascript-Coderhouse.jpg')"></button>
+        <button class="slide-btn slide-btn-2" onclick="mostrarImagenCompleta('./img/Certificaciones/Python-DataScience.jpg')"></button>
+        <button class="slide-btn slide-btn-3" onclick="mostrarImagenCompleta('./img/Certificaciones/Google-Web.jpeg')"></button>
+        <button class="slide-btn slide-btn-4" onclick="mostrarImagenCompleta('./img/Certificaciones/Pathway.jpg')"></button>
+        <button class="slide-btn slide-btn-5" onclick="mostrarImagenCompleta('./img/Certificaciones/Metodologias-pedagogia.jpg')" ></button>
         <!-- carousel wrapper which contains all images -->
         <div class="slideshow-wrapper">
             <div class="slide">
                 <img class="slide-img"
-                    src="https://dummyimage.com/300x250/ccc/000.png&text=Slide1" alt="">
+                id="imagen1" 
+                onclick="mostrarImagenCompleta('./img/Certificaciones/Javascript-Coderhouse.jpg')"
+                    src="./img/Certificaciones/Javascript-Coderhouse.jpg" alt="Javascript-Coderhouse">
             </div>
             <div class="slide">
                 <img class="slide-img"
-                src="https://dummyimage.com/300x250/ccc/000.png&text=Slide2" alt="">
+                id="imagen2" 
+                onclick="mostrarImagenCompleta('./img/Certificaciones/Python-DataScience.jpg')"
+                src="./img/Certificaciones/Python-DataScience.jpg" alt="Python-DataScience">
             </div>
             <div class="slide">
                 <img class="slide-img"
-                src="https://dummyimage.com/300x250/ccc/000.png&text=Slide3" alt="">
+                id="imagen3" 
+                onclick="mostrarImagenCompleta('./img/Certificaciones/Google-Web.jpeg')"
+                src="./img/Certificaciones/Google-Web.jpeg" alt="Google-Web">
             </div>
             <div class="slide">
                 <img class="slide-img" 
-                src="https://dummyimage.com/300x250/ccc/000.png&text=Slide3" alt="">
+                id="imagen4" 
+                onclick="mostrarImagenCompleta('./img/Certificaciones/Pathway.jpg')"
+                src="./img/Certificaciones/Pathway.jpg" alt="Pathway">
             </div>
             <div class="slide">
                 <img class="slide-img"
-                src="https://dummyimage.com/300x250/ccc/000.png&text=Slide4" alt="">
+                id="imagen5" 
+                onclick="mostrarImagenCompleta('./img/Certificaciones/Metodologias-pedagogia.jpg')"
+                src="./img/Certificaciones/Metodologias-pedagogia.jpg" alt="Metodologias-pedagogia">
             </div>
         </div>
         <div class="slider-button">
@@ -79,11 +89,15 @@
     <section id="sobre-mi">
       <div class="contenido">
         <h2>Sobre mí</h2>
-        <h1>Mi nombre es <span>NOMBRE </span>APELLIDO</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, nsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusadipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectusnsectetur, adipisicing elit. Magni repellat quas assumenda illum officiis, suscipit adipisci odio tenetur, delectus reiciendis earum nihil illo ut asperiores expedita sapiente. Recusandae, dolorum expedita?</p>
+        <h1>Mi nombre es <span>Ezequiel </span>M. Tartaglia</h1>
+        <p>Soy una persona con habilidades de liderazgo, organización y logística, así como una amplia experiencia en el campo de la tecnología. Hablo inglés fluido, español y tengo un conocimiento básico de portugués. Además, tengo experiencia en el uso de una variedad de lenguajes de programación y herramientas de tecnología de la información. </p>
+
+        <p> Mi experiencia en liderazgo y mentoría me ha permitido guiar y apoyar a otros en el logro de sus objetivos profesionales y personales. Me apasiona trabajar en equipo para encontrar soluciones efectivas a los desafíos tecnológicos y me esfuerzo por fomentar un ambiente colaborativo y productivo.
+        </p>
+        <p>Como profesional en tecnología, estoy en constante aprendizaje y desarrollo de habilidades para estar al día con las últimas tendencias y tecnologías emergentes. Esto me ha permitido adquirir un conjunto de habilidades técnicas sólidas y una comprensión profunda de la industria tecnológica.</p>
         <button  class="btn" id="downloadCV">Descargar CV</button>
       </div>
-      <img id="profileImg" src="https://dummyimage.com/300x300/ccc/000.png&text=Profile-Image" alt="Profile Picture">
+      <img id="profileImg" src="./img/Perfil/Profile.jpg" alt="Profile Picture">
     </section>
     
     <!-- Sección de habilidades -->
@@ -149,7 +163,7 @@
         <li><a href="#">Twitter</a></li>
         <li><a href="#">LinkedIn</a></li>
       </ul>
-      <span class="rights">Portafolio de Nombre &copy; | Derechos de autor  <span id="year"></span> | <a href="#">Tu Nombre</a></span>
+      <span class="rights">Portafolio de Nombre &copy; | Derechos de autor  <span id="year"></span> | <a href="#">Ezequiel M. Tartaglia</a></span>
     </footer>
 
     <script src="./scripts/script.js"></script>
