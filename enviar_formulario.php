@@ -1,6 +1,7 @@
 
-//Cambiar variable de ejemplo por correo real
-ejemplo@gmail.com → Cambiar al mail verdadero
+<!-- 
+  Cambiar variable de ejemplo por correo real
+ejemplo@gmail.com → Cambiar al mail verdadero -->
 
 if(isset($_POST['enviar'])){
   
@@ -10,7 +11,7 @@ if(isset($_POST['enviar'])){
   $mensaje = $_POST['mensaje'];
   
   // Destinatario del correo electrónico
-  $destinatario = "ejemplo@gmail.com";
+  $destinatario = "antodelfrari@gmail.com";
   
   // Asunto del correo electrónico
   $asunto = "Nuevo mensaje del formulario de contacto";
