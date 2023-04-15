@@ -10,4 +10,4 @@
 
 ## Link del proyecto:
 
-### • link: 
+### • link: https://ezequieltartaglia.github.io/Portafolio-Dinamico/
